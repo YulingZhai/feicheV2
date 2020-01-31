@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>切换图片轮播</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/lunbo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='JS/nav.js') }}"></script>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="{{ url_for('static', filename='JS/move3.js') }}"></script>
+</head>
+
+<body>
+
+<div id="index">
+    <div class="title">非车数据经营分析平台</div>
+    <nav>
+        <ul id="nav">
+            <li class="active"><a href="{{ url_for('hello_index') }}">首页</a></li>
+            <li><a href="{{ url_for('hello_demo') }}">项目介绍</a></li>
+            <li><a href="#">准备工作</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <video id="video" autoplay>
+            <source src="{{ url_for('static', filename='image/background.mp4') }}" type="video/mp4">
+        </video>
+        <div class="vlogo">
+            <span>非车经营线上化，致力转型1+1</span>
+            <span>大数据 创造无限可能</span>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

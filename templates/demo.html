@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>切换图片轮播</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/lunbo.css') }}">
+<style type="text/css"></style>
+<script type="text/javascript" src="{{ url_for('static', filename='JS/move3.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='JS/demo.js') }}"></script>
+
+</head>
+
+<body>
+<div id="index">
+	<div class="title">非车数据经营分析平台</div>
+	<nav>
+		<ul id="nav">
+			<li class="active"><a href="{{ url_for('hello_index') }}">首页</a></li>
+			<li><a href="{{ url_for('hello_demo') }}">项目介绍</a></li>
+			<li><a href="#">准备工作</a></li>
+		</ul>
+	</nav>
+	<div class="bc">
+		<img src="{{ url_for('static', filename='image/demo.jpg') }}" alt="背景图">
+		<div>
+			<h1>项目调研</h1>
+			<h2>实地调研，了解需求，力求通过此次比赛解决非车痛点</h2>
+		</div>
+	</div>
+	<div class="jieshao">项目调研</div>
+
+	<div class="pic" id="pic">
+		<div class="prev"><img src="{{ url_for('static', filename='image/arrow1.png') }}" alt="arrow" /></div>
+		<ul>
+			<li class="pic1"><img src="{{ url_for('static', filename='image/f1.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic2"><img src="{{ url_for('static', filename='image/f2.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic3"><img src="{{ url_for('static', filename='image/f3.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic4"><img src="{{ url_for('static', filename='image/f4.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic5"><img src="{{ url_for('static', filename='image/f5.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic6"><img src="{{ url_for('static', filename='image/f6.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic7"><img src="{{ url_for('static', filename='image/f7.jpg') }}" alt="旋转木马" /></li>
+			<li class="pic7"><img src="{{ url_for('static', filename='image/f8.jpg') }}" alt="旋转木马" /></li>
+		</ul>
+		<div class="next"><img src="{{ url_for('static', filename='image/arrow2.png') }}" alt="arrow" /></div>
+	</div>
+	<div id="time">
+		<div class="line">
+			<div class="top"></div>
+			<div class="down"></div>
+		</div>
+		<ul class="dot" id="dot">
+			<li class="time1"><div class="a"><span>12-1 非车讨论线上</span></div></li>
+			<li class="time2"><div class="b"><span>12-1 非车讨论线下</span></div></li>
+			<li class="time3"><div class="c"><span>12-1 非车讨论左边</span></div></li>
+			<li class="time4"><div class="d"><span>12-1 非车讨论右边</span></div></li>
+			<li class="time5"><div class="e"><span>12-1 非车讨论上边</span></div></li>
+			<li class="time6"><div class="f"><span>12-1 非车讨论下边</span></div></li>
+			<li class="time7"><div class="g"><span>12-1 非车讨论前边</span></div></li>
+			<li class="time7"><div class="g"><span>12-1 非车讨论后边</span></div></li>
+		</ul>
+	</div>
+
+</div>
+</body>
+</html>
